@@ -38,3 +38,47 @@ We are not simplifying the *meaning*; we are optimizing the *rendering*.
 
 ```bash
 pip install englite-core
+🔬 The Logic (Technical Specs)
+EngLite operates on three layers of transformation:
+
+1. Phonetic Layer (The 1:1 Rule)
+We eliminate "Zombie Letters" (Silent letters). | Traditional | EngLite 3.0 | Logic | | :--- | :--- | :--- | | Daughter | DOT-or | gh removed, au -> O | | Phone | FOO-n | ph -> F, o_e -> OO | | Cat | KAT | c is hard -> K |
+
+2. Semantic Layer (Kor-Bloks)
+We use Visual Anchors (Capitalized Roots) to preserve meaning.
+
+VIZ (to see) -> VIZ-ion, in-VIZ-abl, re-VIZ
+
+PORT (to carry) -> im-PORT, ex-PORT, PORT-a-bl
+
+3. Syntax Layer (Grammar Patch)
+No irregular past tense: Went -> did GOO
+
+No irregular plural: Mice -> MOOS-z
+
+🤝 Contributing
+We are looking for Logic Architects to help us build the future of communication.
+
+Current Roadmap (Q1 2026)
+[ ] Core Dictionary: Expand the Kor-Blok database to 3,000 roots.
+
+[ ] NLP Plugin: Build a tokenizer for Hugging Face transformers.
+
+[ ] Browser Extension: Real-time DOM text replacement.
+
+How to Contribute
+Fork this repository.
+
+Read CONTRIBUTING.md for our logic standards.
+
+Submit a Pull Request (PR) with your logic patch.
+
+Note: Please ensure your code passes the phonetic_integrity_check before pushing.
+
+📜 License
+Distributed under the MIT License. See LICENSE for more information.
+
+<div align="center"> <strong>EngLite.org</strong>
+
+
+<em>"We don't change the soul of language; we only change the engine."</em> </div>
